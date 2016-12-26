@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A012C1B51DB9CA8000E7D2E1 /* ZITOPay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A012C1B41DB9CA8000E7D2E1 /* ZITOPay.bundle */; };
+		A01B0E101DBF24970005A7E4 /* ZITOBaseReq.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DC41DBF24970005A7E4 /* ZITOBaseReq.m */; };
+		A01B0E111DBF24970005A7E4 /* ZITOBaseResp.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DC61DBF24970005A7E4 /* ZITOBaseResp.m */; };
+		A01B0E121DBF24970005A7E4 /* ZITOPayReq.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DC91DBF24970005A7E4 /* ZITOPayReq.m */; };
+		A01B0E131DBF24970005A7E4 /* ZITOPayResp.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DCB1DBF24970005A7E4 /* ZITOPayResp.m */; };
+		A01B0E141DBF24970005A7E4 /* ZITOPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DCE1DBF24970005A7E4 /* ZITOPayAdapter.m */; };
+		A01B0E151DBF24970005A7E4 /* ZITOPayRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DD21DBF24970005A7E4 /* ZITOPayRequest.m */; };
+		A01B0E181DBF24970005A7E4 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DDB1DBF24970005A7E4 /* NSDictionary+Utils.m */; };
+		A01B0E191DBF24970005A7E4 /* NSString+IsValid.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DDD1DBF24970005A7E4 /* NSString+IsValid.m */; };
+		A01B0E1A1DBF24970005A7E4 /* ZITOHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DE21DBF24970005A7E4 /* ZITOHTTPSessionManager.m */; };
+		A01B0E1B1DBF24970005A7E4 /* ZITONetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DE51DBF24970005A7E4 /* ZITONetworkReachabilityManager.m */; };
+		A01B0E1C1DBF24970005A7E4 /* ZITOSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DE71DBF24970005A7E4 /* ZITOSecurityPolicy.m */; };
+		A01B0E1D1DBF24970005A7E4 /* ZITOURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DE91DBF24970005A7E4 /* ZITOURLRequestSerialization.m */; };
+		A01B0E1E1DBF24970005A7E4 /* ZITOURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DEB1DBF24970005A7E4 /* ZITOURLResponseSerialization.m */; };
+		A01B0E1F1DBF24970005A7E4 /* ZITOURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DED1DBF24970005A7E4 /* ZITOURLSessionManager.m */; };
+		A01B0E201DBF24970005A7E4 /* ZITOPay+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DEF1DBF24970005A7E4 /* ZITOPay+Utils.m */; };
+		A01B0E211DBF24970005A7E4 /* ZITOPayCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DF11DBF24970005A7E4 /* ZITOPayCache.m */; };
+		A01B0E221DBF24970005A7E4 /* ZITOPayUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DF41DBF24970005A7E4 /* ZITOPayUtil.m */; };
+		A01B0E231DBF24970005A7E4 /* ZITOPay.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0DF61DBF24970005A7E4 /* ZITOPay.m */; };
+		A01B0E3B1DBF25470005A7E4 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A01B0E2D1DBF25460005A7E4 /* AlipaySDK.bundle */; };
+		A01B0E3C1DBF25470005A7E4 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01B0E2E1DBF25470005A7E4 /* AlipaySDK.framework */; };
+		A01B0E571DBF29CD0005A7E4 /* ZITOAliPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0E421DBF29CD0005A7E4 /* ZITOAliPayAdapter.m */; };
+		A01B0E5A1DBF29CD0005A7E4 /* ZITOChanPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0E4C1DBF29CD0005A7E4 /* ZITOChanPayAdapter.m */; };
+		A01B0E5B1DBF29CD0005A7E4 /* ZITOChanPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0E4E1DBF29CD0005A7E4 /* ZITOChanPayViewController.m */; };
+		A01B0E5C1DBF29CD0005A7E4 /* ZITOSumaPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0E511DBF29CD0005A7E4 /* ZITOSumaPayAdapter.m */; };
+		A01B0E5D1DBF29CD0005A7E4 /* ZITOSumaPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0E531DBF29CD0005A7E4 /* ZITOSumaPayViewController.m */; };
+		A01B0E5E1DBF29CD0005A7E4 /* ZITOWXPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A01B0E561DBF29CD0005A7E4 /* ZITOWXPayAdapter.m */; };
+		A04FC02D1D94DF7E0043CED3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC02C1D94DF7E0043CED3 /* QuartzCore.framework */; };
+		A04FC02F1D94DF850043CED3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC02E1D94DF850043CED3 /* CoreText.framework */; };
+		A04FC0311D94DF8C0043CED3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC0301D94DF8C0043CED3 /* CoreGraphics.framework */; };
+		A04FC0331D94DF9A0043CED3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC0321D94DF9A0043CED3 /* CFNetwork.framework */; };
+		A04FC0351D94DFA20043CED3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC0341D94DFA20043CED3 /* CoreMotion.framework */; };
+		A051D9241DC1946B00A9B83E /* ZITOLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A051D9231DC1946B00A9B83E /* ZITOLoadingView.m */; };
+		A05500121D9CA6040009D292 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05500111D9CA6040009D292 /* CoreLocation.framework */; };
+		A05500141D9CA63A0009D292 /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A05500131D9CA63A0009D292 /* libMobileGestalt.tbd */; };
+		A05500291D9D15A30009D292 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05500281D9D15A30009D292 /* ChannelTableViewCell.m */; };
+		A06CBD081DC03AA4001E8B74 /* ZITOYongYiPayAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CBD071DC03AA4001E8B74 /* ZITOYongYiPayAdapter.m */; };
+		A06CBD0B1DC03C24001E8B74 /* ZITOYongYiPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CBD0A1DC03C24001E8B74 /* ZITOYongYiPayViewController.m */; };
+		A07E5C381D93ED4900029D26 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E5C371D93ED4900029D26 /* libc++.tbd */; };
+		A0A23E511DC3703D0001C5DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A23E501DC3703D0001C5DA /* MainViewController.m */; };
+		A0A293E31D93E24400304854 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293E21D93E24400304854 /* libsqlite3.0.tbd */; };
+		A0A293E51D93E2FC00304854 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293E41D93E2FC00304854 /* libz.tbd */; };
+		A0A293E71D93E30900304854 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293E61D93E30900304854 /* Security.framework */; };
+		A0A293E91D93E31700304854 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293E81D93E31700304854 /* CoreTelephony.framework */; };
+		A0A293EB1D93E31E00304854 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293EA1D93E31E00304854 /* SystemConfiguration.framework */; };
+		A0A293ED1D93E32800304854 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293EC1D93E32800304854 /* UIKit.framework */; };
+		A0A293EF1D93E33300304854 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293EE1D93E33300304854 /* Foundation.framework */; };
+		A0C342061DC99BAB00437D53 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C342051DC99BAB00437D53 /* libWeChatSDK.a */; };
+		A0F718E31D92752D00A178FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F718E21D92752D00A178FC /* main.m */; };
+		A0F718E61D92752D00A178FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F718E51D92752D00A178FC /* AppDelegate.m */; };
+		A0F718E91D92752D00A178FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F718E81D92752D00A178FC /* ViewController.m */; };
+		A0F718EC1D92752D00A178FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F718EA1D92752D00A178FC /* Main.storyboard */; };
+		A0F718EE1D92752D00A178FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F718ED1D92752D00A178FC /* Assets.xcassets */; };
+		A0F718F11D92752D00A178FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0F718EF1D92752D00A178FC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A012C1B41DB9CA8000E7D2E1 /* ZITOPay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZITOPay.bundle; sourceTree = "<group>"; };
+		A01B0DC31DBF24970005A7E4 /* ZITOBaseReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOBaseReq.h; sourceTree = "<group>"; };
+		A01B0DC41DBF24970005A7E4 /* ZITOBaseReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOBaseReq.m; sourceTree = "<group>"; };
+		A01B0DC51DBF24970005A7E4 /* ZITOBaseResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOBaseResp.h; sourceTree = "<group>"; };
+		A01B0DC61DBF24970005A7E4 /* ZITOBaseResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOBaseResp.m; sourceTree = "<group>"; };
+		A01B0DC81DBF24970005A7E4 /* ZITOPayReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayReq.h; sourceTree = "<group>"; };
+		A01B0DC91DBF24970005A7E4 /* ZITOPayReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOPayReq.m; sourceTree = "<group>"; };
+		A01B0DCA1DBF24970005A7E4 /* ZITOPayResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayResp.h; sourceTree = "<group>"; };
+		A01B0DCB1DBF24970005A7E4 /* ZITOPayResp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOPayResp.m; sourceTree = "<group>"; };
+		A01B0DCD1DBF24970005A7E4 /* ZITOPayAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayAdapter.h; sourceTree = "<group>"; };
+		A01B0DCE1DBF24970005A7E4 /* ZITOPayAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOPayAdapter.m; sourceTree = "<group>"; };
+		A01B0DD11DBF24970005A7E4 /* ZITOPayRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayRequest.h; sourceTree = "<group>"; };
+		A01B0DD21DBF24970005A7E4 /* ZITOPayRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOPayRequest.m; sourceTree = "<group>"; };
+		A01B0DDA1DBF24970005A7E4 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
+		A01B0DDB1DBF24970005A7E4 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		A01B0DDC1DBF24970005A7E4 /* NSString+IsValid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IsValid.h"; sourceTree = "<group>"; };
+		A01B0DDD1DBF24970005A7E4 /* NSString+IsValid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IsValid.m"; sourceTree = "<group>"; };
+		A01B0DDE1DBF24970005A7E4 /* ZITOCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOCategory.h; sourceTree = "<group>"; };
+		A01B0DE11DBF24970005A7E4 /* ZITOHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOHTTPSessionManager.h; sourceTree = "<group>"; };
+		A01B0DE21DBF24970005A7E4 /* ZITOHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOHTTPSessionManager.m; sourceTree = "<group>"; };
+		A01B0DE31DBF24970005A7E4 /* ZITONetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITONetworking.h; sourceTree = "<group>"; };
+		A01B0DE41DBF24970005A7E4 /* ZITONetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITONetworkReachabilityManager.h; sourceTree = "<group>"; };
+		A01B0DE51DBF24970005A7E4 /* ZITONetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITONetworkReachabilityManager.m; sourceTree = "<group>"; };
+		A01B0DE61DBF24970005A7E4 /* ZITOSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOSecurityPolicy.h; sourceTree = "<group>"; };
+		A01B0DE71DBF24970005A7E4 /* ZITOSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOSecurityPolicy.m; sourceTree = "<group>"; };
+		A01B0DE81DBF24970005A7E4 /* ZITOURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOURLRequestSerialization.h; sourceTree = "<group>"; };
+		A01B0DE91DBF24970005A7E4 /* ZITOURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOURLRequestSerialization.m; sourceTree = "<group>"; };
+		A01B0DEA1DBF24970005A7E4 /* ZITOURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOURLResponseSerialization.h; sourceTree = "<group>"; };
+		A01B0DEB1DBF24970005A7E4 /* ZITOURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOURLResponseSerialization.m; sourceTree = "<group>"; };
+		A01B0DEC1DBF24970005A7E4 /* ZITOURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOURLSessionManager.h; sourceTree = "<group>"; };
+		A01B0DED1DBF24970005A7E4 /* ZITOURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOURLSessionManager.m; sourceTree = "<group>"; };
+		A01B0DEE1DBF24970005A7E4 /* ZITOPay+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZITOPay+Utils.h"; sourceTree = "<group>"; };
+		A01B0DEF1DBF24970005A7E4 /* ZITOPay+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZITOPay+Utils.m"; sourceTree = "<group>"; };
+		A01B0DF01DBF24970005A7E4 /* ZITOPayCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayCache.h; sourceTree = "<group>"; };
+		A01B0DF11DBF24970005A7E4 /* ZITOPayCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOPayCache.m; sourceTree = "<group>"; };
+		A01B0DF21DBF24970005A7E4 /* ZITOPayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayConfig.h; sourceTree = "<group>"; };
+		A01B0DF31DBF24970005A7E4 /* ZITOPayUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayUtil.h; sourceTree = "<group>"; };
+		A01B0DF41DBF24970005A7E4 /* ZITOPayUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOPayUtil.m; sourceTree = "<group>"; };
+		A01B0DF51DBF24970005A7E4 /* ZITOPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPay.h; sourceTree = "<group>"; };
+		A01B0DF61DBF24970005A7E4 /* ZITOPay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOPay.m; sourceTree = "<group>"; };
+		A01B0E0F1DBF24970005A7E4 /* ZITOPayObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayObjects.h; sourceTree = "<group>"; };
+		A01B0E2D1DBF25460005A7E4 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		A01B0E2E1DBF25470005A7E4 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		A01B0E391DBF25470005A7E4 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		A01B0E3A1DBF25470005A7E4 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		A01B0E411DBF29CD0005A7E4 /* ZITOAliPayAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOAliPayAdapter.h; sourceTree = "<group>"; };
+		A01B0E421DBF29CD0005A7E4 /* ZITOAliPayAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOAliPayAdapter.m; sourceTree = "<group>"; };
+		A01B0E4B1DBF29CD0005A7E4 /* ZITOChanPayAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOChanPayAdapter.h; sourceTree = "<group>"; };
+		A01B0E4C1DBF29CD0005A7E4 /* ZITOChanPayAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOChanPayAdapter.m; sourceTree = "<group>"; };
+		A01B0E4D1DBF29CD0005A7E4 /* ZITOChanPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOChanPayViewController.h; sourceTree = "<group>"; };
+		A01B0E4E1DBF29CD0005A7E4 /* ZITOChanPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOChanPayViewController.m; sourceTree = "<group>"; };
+		A01B0E501DBF29CD0005A7E4 /* ZITOSumaPayAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOSumaPayAdapter.h; sourceTree = "<group>"; };
+		A01B0E511DBF29CD0005A7E4 /* ZITOSumaPayAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOSumaPayAdapter.m; sourceTree = "<group>"; };
+		A01B0E521DBF29CD0005A7E4 /* ZITOSumaPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOSumaPayViewController.h; sourceTree = "<group>"; };
+		A01B0E531DBF29CD0005A7E4 /* ZITOSumaPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOSumaPayViewController.m; sourceTree = "<group>"; };
+		A01B0E551DBF29CD0005A7E4 /* ZITOWXPayAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOWXPayAdapter.h; sourceTree = "<group>"; };
+		A01B0E561DBF29CD0005A7E4 /* ZITOWXPayAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOWXPayAdapter.m; sourceTree = "<group>"; };
+		A01B0F2B1DBF41F10005A7E4 /* ZITOPayAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOPayAdapterProtocol.h; sourceTree = "<group>"; };
+		A01EAD751DB20A3300979E65 /* ZITOPay.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZITOPay.pch; sourceTree = "<group>"; };
+		A04FC02C1D94DF7E0043CED3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A04FC02E1D94DF850043CED3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A04FC0301D94DF8C0043CED3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A04FC0321D94DF9A0043CED3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A04FC0341D94DFA20043CED3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A051D9221DC1946B00A9B83E /* ZITOLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOLoadingView.h; sourceTree = "<group>"; };
+		A051D9231DC1946B00A9B83E /* ZITOLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOLoadingView.m; sourceTree = "<group>"; };
+		A05500111D9CA6040009D292 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A05500131D9CA63A0009D292 /* libMobileGestalt.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestalt.tbd; path = usr/lib/libMobileGestalt.tbd; sourceTree = SDKROOT; };
+		A05500271D9D15A30009D292 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
+		A05500281D9D15A30009D292 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
+		A06CBD061DC03AA4001E8B74 /* ZITOYongYiPayAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOYongYiPayAdapter.h; sourceTree = "<group>"; };
+		A06CBD071DC03AA4001E8B74 /* ZITOYongYiPayAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOYongYiPayAdapter.m; sourceTree = "<group>"; };
+		A06CBD091DC03C24001E8B74 /* ZITOYongYiPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZITOYongYiPayViewController.h; sourceTree = "<group>"; };
+		A06CBD0A1DC03C24001E8B74 /* ZITOYongYiPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZITOYongYiPayViewController.m; sourceTree = "<group>"; };
+		A07E5C371D93ED4900029D26 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		A0A23E4F1DC3703D0001C5DA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A0A23E501DC3703D0001C5DA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A0A293E21D93E24400304854 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A0A293E41D93E2FC00304854 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A0A293E61D93E30900304854 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A0A293E81D93E31700304854 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A0A293EA1D93E31E00304854 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A0A293EC1D93E32800304854 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0A293EE1D93E33300304854 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0C342051DC99BAB00437D53 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		A0F718DE1D92752D00A178FC /* ZITOPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZITOPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F718E21D92752D00A178FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0F718E41D92752D00A178FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0F718E51D92752D00A178FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0F718E71D92752D00A178FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0F718E81D92752D00A178FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A0F718EB1D92752D00A178FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0F718ED1D92752D00A178FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F718F01D92752D00A178FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0F718F21D92752D00A178FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F718FB1D92752D00A178FC /* ZITOPayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZITOPayTests.m; sourceTree = "<group>"; };
+		A0F718FD1D92752D00A178FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0F719061D92752D00A178FC /* ZITOPayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZITOPayUITests.m; sourceTree = "<group>"; };
+		A0F719081D92752D00A178FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0F718DB1D92752D00A178FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05500141D9CA63A0009D292 /* libMobileGestalt.tbd in Frameworks */,
+				A01B0E3C1DBF25470005A7E4 /* AlipaySDK.framework in Frameworks */,
+				A0C342061DC99BAB00437D53 /* libWeChatSDK.a in Frameworks */,
+				A05500121D9CA6040009D292 /* CoreLocation.framework in Frameworks */,
+				A04FC0351D94DFA20043CED3 /* CoreMotion.framework in Frameworks */,
+				A04FC0331D94DF9A0043CED3 /* CFNetwork.framework in Frameworks */,
+				A04FC0311D94DF8C0043CED3 /* CoreGraphics.framework in Frameworks */,
+				A04FC02F1D94DF850043CED3 /* CoreText.framework in Frameworks */,
+				A04FC02D1D94DF7E0043CED3 /* QuartzCore.framework in Frameworks */,
+				A0A293E91D93E31700304854 /* CoreTelephony.framework in Frameworks */,
+				A07E5C381D93ED4900029D26 /* libc++.tbd in Frameworks */,
+				A0A293EF1D93E33300304854 /* Foundation.framework in Frameworks */,
+				A0A293ED1D93E32800304854 /* UIKit.framework in Frameworks */,
+				A0A293EB1D93E31E00304854 /* SystemConfiguration.framework in Frameworks */,
+				A0A293E71D93E30900304854 /* Security.framework in Frameworks */,
+				A0A293E51D93E2FC00304854 /* libz.tbd in Frameworks */,
+				A0A293E31D93E24400304854 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01B0DB81DBF24530005A7E4 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				A06CBD0C1DC0405A001E8B74 /* YongYiSDK */,
+				A01B0E2C1DBF25460005A7E4 /* ALIPaySDK */,
+				A01B0E351DBF25470005A7E4 /* chanPaySDK */,
+				A01B0E361DBF25470005A7E4 /* SumaPaySDK */,
+				A01B0E371DBF25470005A7E4 /* WeChatSDK */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		A01B0DC01DBF24970005A7E4 /* ZITOPay */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DC11DBF24970005A7E4 /* Classes */,
+				A01B0DCC1DBF24970005A7E4 /* Protocol */,
+				A01B0DD01DBF24970005A7E4 /* Request */,
+				A01B0DD91DBF24970005A7E4 /* Utils */,
+			);
+			path = ZITOPay;
+			sourceTree = "<group>";
+		};
+		A01B0DC11DBF24970005A7E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DC21DBF24970005A7E4 /* ZITOBase */,
+				A01B0DC71DBF24970005A7E4 /* ZITOPayBase */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A01B0DC21DBF24970005A7E4 /* ZITOBase */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DC31DBF24970005A7E4 /* ZITOBaseReq.h */,
+				A01B0DC41DBF24970005A7E4 /* ZITOBaseReq.m */,
+				A01B0DC51DBF24970005A7E4 /* ZITOBaseResp.h */,
+				A01B0DC61DBF24970005A7E4 /* ZITOBaseResp.m */,
+			);
+			path = ZITOBase;
+			sourceTree = "<group>";
+		};
+		A01B0DC71DBF24970005A7E4 /* ZITOPayBase */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DC81DBF24970005A7E4 /* ZITOPayReq.h */,
+				A01B0DC91DBF24970005A7E4 /* ZITOPayReq.m */,
+				A01B0DCA1DBF24970005A7E4 /* ZITOPayResp.h */,
+				A01B0DCB1DBF24970005A7E4 /* ZITOPayResp.m */,
+			);
+			path = ZITOPayBase;
+			sourceTree = "<group>";
+		};
+		A01B0DCC1DBF24970005A7E4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DCD1DBF24970005A7E4 /* ZITOPayAdapter.h */,
+				A01B0DCE1DBF24970005A7E4 /* ZITOPayAdapter.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A01B0DD01DBF24970005A7E4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DD11DBF24970005A7E4 /* ZITOPayRequest.h */,
+				A01B0DD21DBF24970005A7E4 /* ZITOPayRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A01B0DD91DBF24970005A7E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DE01DBF24970005A7E4 /* ZITONetworking */,
+				A01B0DDA1DBF24970005A7E4 /* NSDictionary+Utils.h */,
+				A01B0DDB1DBF24970005A7E4 /* NSDictionary+Utils.m */,
+				A01B0DDC1DBF24970005A7E4 /* NSString+IsValid.h */,
+				A01B0DDD1DBF24970005A7E4 /* NSString+IsValid.m */,
+				A01B0DDE1DBF24970005A7E4 /* ZITOCategory.h */,
+				A01B0DEE1DBF24970005A7E4 /* ZITOPay+Utils.h */,
+				A01B0DEF1DBF24970005A7E4 /* ZITOPay+Utils.m */,
+				A01B0DF01DBF24970005A7E4 /* ZITOPayCache.h */,
+				A01B0DF11DBF24970005A7E4 /* ZITOPayCache.m */,
+				A01B0DF21DBF24970005A7E4 /* ZITOPayConfig.h */,
+				A01B0DF31DBF24970005A7E4 /* ZITOPayUtil.h */,
+				A01B0DF41DBF24970005A7E4 /* ZITOPayUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A01B0DE01DBF24970005A7E4 /* ZITONetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DE11DBF24970005A7E4 /* ZITOHTTPSessionManager.h */,
+				A01B0DE21DBF24970005A7E4 /* ZITOHTTPSessionManager.m */,
+				A01B0DE31DBF24970005A7E4 /* ZITONetworking.h */,
+				A01B0DE41DBF24970005A7E4 /* ZITONetworkReachabilityManager.h */,
+				A01B0DE51DBF24970005A7E4 /* ZITONetworkReachabilityManager.m */,
+				A01B0DE61DBF24970005A7E4 /* ZITOSecurityPolicy.h */,
+				A01B0DE71DBF24970005A7E4 /* ZITOSecurityPolicy.m */,
+				A01B0DE81DBF24970005A7E4 /* ZITOURLRequestSerialization.h */,
+				A01B0DE91DBF24970005A7E4 /* ZITOURLRequestSerialization.m */,
+				A01B0DEA1DBF24970005A7E4 /* ZITOURLResponseSerialization.h */,
+				A01B0DEB1DBF24970005A7E4 /* ZITOURLResponseSerialization.m */,
+				A01B0DEC1DBF24970005A7E4 /* ZITOURLSessionManager.h */,
+				A01B0DED1DBF24970005A7E4 /* ZITOURLSessionManager.m */,
+			);
+			path = ZITONetworking;
+			sourceTree = "<group>";
+		};
+		A01B0E2C1DBF25460005A7E4 /* ALIPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0E2D1DBF25460005A7E4 /* AlipaySDK.bundle */,
+				A01B0E2E1DBF25470005A7E4 /* AlipaySDK.framework */,
+			);
+			path = ALIPaySDK;
+			sourceTree = "<group>";
+		};
+		A01B0E351DBF25470005A7E4 /* chanPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = chanPaySDK;
+			sourceTree = "<group>";
+		};
+		A01B0E361DBF25470005A7E4 /* SumaPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SumaPaySDK;
+			sourceTree = "<group>";
+		};
+		A01B0E371DBF25470005A7E4 /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A0C342051DC99BAB00437D53 /* libWeChatSDK.a */,
+				A01B0E391DBF25470005A7E4 /* WXApi.h */,
+				A01B0E3A1DBF25470005A7E4 /* WXApiObject.h */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+		A01B0E3F1DBF29CD0005A7E4 /* ZITOPayChannel */ = {
+			isa = PBXGroup;
+			children = (
+				A06CBD051DC03A6F001E8B74 /* YongYiPay */,
+				A01B0E401DBF29CD0005A7E4 /* AliPay */,
+				A01B0E4A1DBF29CD0005A7E4 /* ChanPay */,
+				A01B0E4F1DBF29CD0005A7E4 /* SumaPay */,
+				A01B0E541DBF29CD0005A7E4 /* WXPay */,
+			);
+			path = ZITOPayChannel;
+			sourceTree = "<group>";
+		};
+		A01B0E401DBF29CD0005A7E4 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0E411DBF29CD0005A7E4 /* ZITOAliPayAdapter.h */,
+				A01B0E421DBF29CD0005A7E4 /* ZITOAliPayAdapter.m */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		A01B0E4A1DBF29CD0005A7E4 /* ChanPay */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0E4B1DBF29CD0005A7E4 /* ZITOChanPayAdapter.h */,
+				A01B0E4C1DBF29CD0005A7E4 /* ZITOChanPayAdapter.m */,
+				A01B0E4D1DBF29CD0005A7E4 /* ZITOChanPayViewController.h */,
+				A01B0E4E1DBF29CD0005A7E4 /* ZITOChanPayViewController.m */,
+			);
+			path = ChanPay;
+			sourceTree = "<group>";
+		};
+		A01B0E4F1DBF29CD0005A7E4 /* SumaPay */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0E501DBF29CD0005A7E4 /* ZITOSumaPayAdapter.h */,
+				A01B0E511DBF29CD0005A7E4 /* ZITOSumaPayAdapter.m */,
+				A01B0E521DBF29CD0005A7E4 /* ZITOSumaPayViewController.h */,
+				A01B0E531DBF29CD0005A7E4 /* ZITOSumaPayViewController.m */,
+			);
+			path = SumaPay;
+			sourceTree = "<group>";
+		};
+		A01B0E541DBF29CD0005A7E4 /* WXPay */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0E551DBF29CD0005A7E4 /* ZITOWXPayAdapter.h */,
+				A01B0E561DBF29CD0005A7E4 /* ZITOWXPayAdapter.m */,
+			);
+			path = WXPay;
+			sourceTree = "<group>";
+		};
+		A051D9211DC1946B00A9B83E /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				A051D9221DC1946B00A9B83E /* ZITOLoadingView.h */,
+				A051D9231DC1946B00A9B83E /* ZITOLoadingView.m */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		A06CBD051DC03A6F001E8B74 /* YongYiPay */ = {
+			isa = PBXGroup;
+			children = (
+				A06CBD061DC03AA4001E8B74 /* ZITOYongYiPayAdapter.h */,
+				A06CBD071DC03AA4001E8B74 /* ZITOYongYiPayAdapter.m */,
+				A06CBD091DC03C24001E8B74 /* ZITOYongYiPayViewController.h */,
+				A06CBD0A1DC03C24001E8B74 /* ZITOYongYiPayViewController.m */,
+			);
+			path = YongYiPay;
+			sourceTree = "<group>";
+		};
+		A06CBD0C1DC0405A001E8B74 /* YongYiSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YongYiSDK;
+			sourceTree = "<group>";
+		};
+		A0A293E11D93E24400304854 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A05500131D9CA63A0009D292 /* libMobileGestalt.tbd */,
+				A05500111D9CA6040009D292 /* CoreLocation.framework */,
+				A04FC0341D94DFA20043CED3 /* CoreMotion.framework */,
+				A04FC0321D94DF9A0043CED3 /* CFNetwork.framework */,
+				A04FC0301D94DF8C0043CED3 /* CoreGraphics.framework */,
+				A04FC02E1D94DF850043CED3 /* CoreText.framework */,
+				A04FC02C1D94DF7E0043CED3 /* QuartzCore.framework */,
+				A07E5C371D93ED4900029D26 /* libc++.tbd */,
+				A0A293EE1D93E33300304854 /* Foundation.framework */,
+				A0A293EC1D93E32800304854 /* UIKit.framework */,
+				A0A293EA1D93E31E00304854 /* SystemConfiguration.framework */,
+				A0A293E81D93E31700304854 /* CoreTelephony.framework */,
+				A0A293E61D93E30900304854 /* Security.framework */,
+				A0A293E41D93E2FC00304854 /* libz.tbd */,
+				A0A293E21D93E24400304854 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0F718D51D92752D00A178FC = {
+			isa = PBXGroup;
+			children = (
+				A01B0E3F1DBF29CD0005A7E4 /* ZITOPayChannel */,
+				A01B0DB81DBF24530005A7E4 /* Channel */,
+				A0F719141D92928700A178FC /* ZITOPAYSDK */,
+				A0F718E01D92752D00A178FC /* ZITOPayDemo */,
+				A0F718FA1D92752D00A178FC /* ZITOPayTests */,
+				A0F719051D92752D00A178FC /* ZITOPayUITests */,
+				A0F718DF1D92752D00A178FC /* Products */,
+				A0A293E11D93E24400304854 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0F718DF1D92752D00A178FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0F718DE1D92752D00A178FC /* ZITOPay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0F718E01D92752D00A178FC /* ZITOPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A051D9211DC1946B00A9B83E /* LoadingView */,
+				A0F718E41D92752D00A178FC /* AppDelegate.h */,
+				A0F718E51D92752D00A178FC /* AppDelegate.m */,
+				A0A23E4F1DC3703D0001C5DA /* MainViewController.h */,
+				A0A23E501DC3703D0001C5DA /* MainViewController.m */,
+				A0F718E71D92752D00A178FC /* ViewController.h */,
+				A0F718E81D92752D00A178FC /* ViewController.m */,
+				A05500271D9D15A30009D292 /* ChannelTableViewCell.h */,
+				A05500281D9D15A30009D292 /* ChannelTableViewCell.m */,
+				A0F718EA1D92752D00A178FC /* Main.storyboard */,
+				A0F718ED1D92752D00A178FC /* Assets.xcassets */,
+				A0F718EF1D92752D00A178FC /* LaunchScreen.storyboard */,
+				A0F718F21D92752D00A178FC /* Info.plist */,
+				A0F718E11D92752D00A178FC /* Supporting Files */,
+			);
+			name = ZITOPayDemo;
+			path = ZITOPay;
+			sourceTree = "<group>";
+		};
+		A0F718E11D92752D00A178FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A012C1B41DB9CA8000E7D2E1 /* ZITOPay.bundle */,
+				A01EAD751DB20A3300979E65 /* ZITOPay.pch */,
+				A0F718E21D92752D00A178FC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0F718FA1D92752D00A178FC /* ZITOPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0F718FB1D92752D00A178FC /* ZITOPayTests.m */,
+				A0F718FD1D92752D00A178FC /* Info.plist */,
+			);
+			path = ZITOPayTests;
+			sourceTree = "<group>";
+		};
+		A0F719051D92752D00A178FC /* ZITOPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0F719061D92752D00A178FC /* ZITOPayUITests.m */,
+				A0F719081D92752D00A178FC /* Info.plist */,
+			);
+			path = ZITOPayUITests;
+			sourceTree = "<group>";
+		};
+		A0F719141D92928700A178FC /* ZITOPAYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A01B0DF51DBF24970005A7E4 /* ZITOPay.h */,
+				A01B0DF61DBF24970005A7E4 /* ZITOPay.m */,
+				A01B0E0F1DBF24970005A7E4 /* ZITOPayObjects.h */,
+				A01B0F2B1DBF41F10005A7E4 /* ZITOPayAdapterProtocol.h */,
+				A01B0DC01DBF24970005A7E4 /* ZITOPay */,
+			);
+			path = ZITOPAYSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0F718DD1D92752D00A178FC /* ZITOPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0F7190B1D92752D00A178FC /* Build configuration list for PBXNativeTarget "ZITOPay" */;
+			buildPhases = (
+				A0F718DA1D92752D00A178FC /* Sources */,
+				A0F718DB1D92752D00A178FC /* Frameworks */,
+				A0F718DC1D92752D00A178FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZITOPay;
+			productName = ZITOPay;
+			productReference = A0F718DE1D92752D00A178FC /* ZITOPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0F718D61D92752D00A178FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ldd;
+				TargetAttributes = {
+					A0F718DD1D92752D00A178FC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = HQ3GMXXSQ9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0F718D91D92752D00A178FC /* Build configuration list for PBXProject "ZITOPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0F718D51D92752D00A178FC;
+			productRefGroup = A0F718DF1D92752D00A178FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0F718DD1D92752D00A178FC /* ZITOPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0F718DC1D92752D00A178FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01B0E3B1DBF25470005A7E4 /* AlipaySDK.bundle in Resources */,
+				A012C1B51DB9CA8000E7D2E1 /* ZITOPay.bundle in Resources */,
+				A0F718F11D92752D00A178FC /* LaunchScreen.storyboard in Resources */,
+				A0F718EE1D92752D00A178FC /* Assets.xcassets in Resources */,
+				A0F718EC1D92752D00A178FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0F718DA1D92752D00A178FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01B0E571DBF29CD0005A7E4 /* ZITOAliPayAdapter.m in Sources */,
+				A051D9241DC1946B00A9B83E /* ZITOLoadingView.m in Sources */,
+				A01B0E201DBF24970005A7E4 /* ZITOPay+Utils.m in Sources */,
+				A0F718E91D92752D00A178FC /* ViewController.m in Sources */,
+				A01B0E5D1DBF29CD0005A7E4 /* ZITOSumaPayViewController.m in Sources */,
+				A01B0E5C1DBF29CD0005A7E4 /* ZITOSumaPayAdapter.m in Sources */,
+				A0A23E511DC3703D0001C5DA /* MainViewController.m in Sources */,
+				A06CBD0B1DC03C24001E8B74 /* ZITOYongYiPayViewController.m in Sources */,
+				A0F718E61D92752D00A178FC /* AppDelegate.m in Sources */,
+				A01B0E1C1DBF24970005A7E4 /* ZITOSecurityPolicy.m in Sources */,
+				A01B0E5A1DBF29CD0005A7E4 /* ZITOChanPayAdapter.m in Sources */,
+				A01B0E131DBF24970005A7E4 /* ZITOPayResp.m in Sources */,
+				A01B0E121DBF24970005A7E4 /* ZITOPayReq.m in Sources */,
+				A01B0E1F1DBF24970005A7E4 /* ZITOURLSessionManager.m in Sources */,
+				A01B0E5E1DBF29CD0005A7E4 /* ZITOWXPayAdapter.m in Sources */,
+				A01B0E111DBF24970005A7E4 /* ZITOBaseResp.m in Sources */,
+				A06CBD081DC03AA4001E8B74 /* ZITOYongYiPayAdapter.m in Sources */,
+				A01B0E191DBF24970005A7E4 /* NSString+IsValid.m in Sources */,
+				A01B0E1D1DBF24970005A7E4 /* ZITOURLRequestSerialization.m in Sources */,
+				A01B0E221DBF24970005A7E4 /* ZITOPayUtil.m in Sources */,
+				A01B0E5B1DBF29CD0005A7E4 /* ZITOChanPayViewController.m in Sources */,
+				A01B0E231DBF24970005A7E4 /* ZITOPay.m in Sources */,
+				A01B0E141DBF24970005A7E4 /* ZITOPayAdapter.m in Sources */,
+				A01B0E151DBF24970005A7E4 /* ZITOPayRequest.m in Sources */,
+				A05500291D9D15A30009D292 /* ChannelTableViewCell.m in Sources */,
+				A01B0E101DBF24970005A7E4 /* ZITOBaseReq.m in Sources */,
+				A01B0E1A1DBF24970005A7E4 /* ZITOHTTPSessionManager.m in Sources */,
+				A01B0E1E1DBF24970005A7E4 /* ZITOURLResponseSerialization.m in Sources */,
+				A01B0E211DBF24970005A7E4 /* ZITOPayCache.m in Sources */,
+				A01B0E181DBF24970005A7E4 /* NSDictionary+Utils.m in Sources */,
+				A01B0E1B1DBF24970005A7E4 /* ZITONetworkReachabilityManager.m in Sources */,
+				A0F718E31D92752D00A178FC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0F718EA1D92752D00A178FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F718EB1D92752D00A178FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0F718EF1D92752D00A178FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0F718F01D92752D00A178FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0F719091D92752D00A178FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0F7190A1D92752D00A178FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0F7190C1D92752D00A178FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HQ3GMXXSQ9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/AliPay/ALIPaySDK",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/SumaPay",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/SumaPay/SumaPaySDK",
+					"$(PROJECT_DIR)/Channel/ALIPaySDK",
+					"$(PROJECT_DIR)/Channel/SumaPaySDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZITOPay/ZITOPay.pch";
+				INFOPLIST_FILE = ZITOPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/WXPay/WXPaySDK",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/WXPay/WeChatSDK",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/ApplePay/applePaySDK/libs",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/ChanPay/chanPaySDK",
+					"$(PROJECT_DIR)/Channel/applePaySDK/libs",
+					"$(PROJECT_DIR)/Channel/WeChatSDK",
+					"$(PROJECT_DIR)/ZITOPAYSDK/libs",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zitopay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A0F7190D1D92752D00A178FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HQ3GMXXSQ9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/AliPay/ALIPaySDK",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/SumaPay",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/SumaPay/SumaPaySDK",
+					"$(PROJECT_DIR)/Channel/ALIPaySDK",
+					"$(PROJECT_DIR)/Channel/SumaPaySDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZITOPay/ZITOPay.pch";
+				INFOPLIST_FILE = ZITOPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/WXPay/WXPaySDK",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/WXPay/WeChatSDK",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/ApplePay/applePaySDK/libs",
+					"$(PROJECT_DIR)/ZITOPAYSDK/Channel/ChanPay/chanPaySDK",
+					"$(PROJECT_DIR)/Channel/applePaySDK/libs",
+					"$(PROJECT_DIR)/Channel/WeChatSDK",
+					"$(PROJECT_DIR)/ZITOPAYSDK/libs",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zitopay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0F718D91D92752D00A178FC /* Build configuration list for PBXProject "ZITOPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F719091D92752D00A178FC /* Debug */,
+				A0F7190A1D92752D00A178FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0F7190B1D92752D00A178FC /* Build configuration list for PBXNativeTarget "ZITOPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F7190C1D92752D00A178FC /* Debug */,
+				A0F7190D1D92752D00A178FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0F718D61D92752D00A178FC /* Project object */;
+}
