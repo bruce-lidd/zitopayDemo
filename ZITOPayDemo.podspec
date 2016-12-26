@@ -38,9 +38,6 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'Wx' do |ss|
-        ss.source_files = 'lib/Channels/Wxpay/*.h'
-        ss.public_header_files = 'lib/Channels/Wxpay/*.h'
-        ss.vendored_libraries = 'lib/Channels/Wxpay/*.a'
         ss.dependency 'ZITOPayDemo/Core'
     end
 end
