@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'Wx' do |ss|
+        ss.vendored_libraries = 'lib/Channels/Wxpay/*.a'
         ss.dependency 'ZITOPayDemo/Core'
     end
 end
