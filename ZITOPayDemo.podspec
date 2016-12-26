@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
         core.public_header_files = 'lib/*.h'
         core.vendored_libraries = 'lib/*.a'
         core.frameworks = 'CFNetwork', 'SystemConfiguration', 'Security'
-        core.ios.library = 'libc++', 'libz', 'libsqlite3'
+        core.ios.library = 'c++', 'stdc++', 'z'
         core.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
     end
 
