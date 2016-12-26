@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     s.source_files = 'ZITOPayDemo/Classes/**/*'
 
     s.requires_arc = true
-    s.default_subspec = 'Core', 'Alipay','Wx'
+    s.default_subspec = 'Core', 'Alipay', 'Sumpay'
 
     s.subspec 'Core' do |core|
         core.source_files = 'lib/*.h'
@@ -37,8 +37,9 @@ Pod::Spec.new do |s|
         ss.dependency 'ZITOPayDemo/Core'
     end
 
-    s.subspec 'Wx' do |ss|
-        ss.vendored_libraries = 'lib/Channels/Wxpay/*.a'
+    s.subspec 'Sumpay' do |ss|
+        ss.vendored_libraries = 'lib/Channels/Sumpay/*.a'
         ss.dependency 'ZITOPayDemo/Core'
     end
+
 end
