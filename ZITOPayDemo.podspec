@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                         支持微信支付，支付宝钱包。
                        DESC
 
-    s.homepage         = 'https://zitopay.com.cn'
+    s.homepage         = 'http://www.zitopay.com'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'bruce_lidd' => '964991296@qq.com' }
     s.source           = { :git => 'https://github.com/bruce-lidd/zitopayDemo.git', :tag => s.version.to_s }
