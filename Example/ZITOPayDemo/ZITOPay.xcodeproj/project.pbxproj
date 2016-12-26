@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A012C1B51DB9CA8000E7D2E1 /* ZITOPay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A012C1B41DB9CA8000E7D2E1 /* ZITOPay.bundle */; };
 		A04FC02D1D94DF7E0043CED3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC02C1D94DF7E0043CED3 /* QuartzCore.framework */; };
 		A04FC02F1D94DF850043CED3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC02E1D94DF850043CED3 /* CoreText.framework */; };
 		A04FC0311D94DF8C0043CED3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04FC0301D94DF8C0043CED3 /* CoreGraphics.framework */; };
@@ -22,6 +21,7 @@
 		A078453F1DDEFEFF005C2803 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A078453A1DDEFEFF005C2803 /* AlipaySDK.bundle */; };
 		A07845401DDEFEFF005C2803 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A078453B1DDEFEFF005C2803 /* AlipaySDK.framework */; };
 		A07845411DDEFEFF005C2803 /* libZITOPay+alipay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A078453C1DDEFEFF005C2803 /* libZITOPay+alipay.a */; };
+		A07D7B101E10B65800A21523 /* ZITOPay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A07D7B0F1E10B65700A21523 /* ZITOPay.bundle */; };
 		A07E5C381D93ED4900029D26 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A07E5C371D93ED4900029D26 /* libc++.tbd */; };
 		A0A23E511DC3703D0001C5DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A23E501DC3703D0001C5DA /* MainViewController.m */; };
 		A0A293E31D93E24400304854 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A293E21D93E24400304854 /* libsqlite3.0.tbd */; };
@@ -40,7 +40,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A012C1B41DB9CA8000E7D2E1 /* ZITOPay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZITOPay.bundle; sourceTree = "<group>"; };
 		A01EAD751DB20A3300979E65 /* ZITOPay.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZITOPay.pch; sourceTree = "<group>"; };
 		A04FC02C1D94DF7E0043CED3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A04FC02E1D94DF850043CED3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -60,6 +59,7 @@
 		A078453A1DDEFEFF005C2803 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		A078453B1DDEFEFF005C2803 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		A078453C1DDEFEFF005C2803 /* libZITOPay+alipay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libZITOPay+alipay.a"; sourceTree = "<group>"; };
+		A07D7B0F1E10B65700A21523 /* ZITOPay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZITOPay.bundle; sourceTree = "<group>"; };
 		A07E5C371D93ED4900029D26 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A0A23E4F1DC3703D0001C5DA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A0A23E501DC3703D0001C5DA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		A0F718E11D92752D00A178FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A012C1B41DB9CA8000E7D2E1 /* ZITOPay.bundle */,
+				A07D7B0F1E10B65700A21523 /* ZITOPay.bundle */,
 				A01EAD751DB20A3300979E65 /* ZITOPay.pch */,
 				A0F718E21D92752D00A178FC /* main.m */,
 			);
@@ -323,7 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A078453F1DDEFEFF005C2803 /* AlipaySDK.bundle in Resources */,
-				A012C1B51DB9CA8000E7D2E1 /* ZITOPay.bundle in Resources */,
+				A07D7B101E10B65800A21523 /* ZITOPay.bundle in Resources */,
 				A0F718F11D92752D00A178FC /* LaunchScreen.storyboard in Resources */,
 				A0F718EE1D92752D00A178FC /* Assets.xcassets in Resources */,
 				A0F718EC1D92752D00A178FC /* Main.storyboard in Resources */,
@@ -478,7 +478,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZITOPay/ZITOPay.pch";
 				INFOPLIST_FILE = ZITOPay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,7 +521,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZITOPay/ZITOPay.pch";
 				INFOPLIST_FILE = ZITOPay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
