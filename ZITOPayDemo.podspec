@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.author           = { 'bruce_lidd' => '964991296@qq.com' }
     s.source           = { :git => 'https://github.com/bruce-lidd/zitopayDemo.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '9.0'
     s.source_files = 'ZITOPayDemo/Classes/**/*'
 
     s.requires_arc = true
